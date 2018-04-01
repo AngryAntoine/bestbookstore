@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head_title %}{{book.title}} | {{ block.super}}{% endblock %}
+
+
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    {% if book.image %}
+        <img style="height: 200px;" src="{{ book.image.url }}" alt="Great photo here" class="img-thumbnail img-responsive">
+    {% endif %}
+    <h1>{{book}}</h1>
+    <p>written by <small>{% for author in book.authors.all %}{{ author.name }}{% if book.authors.all|length > 1 and not forloop.last %} and {% endif %}{% endfor %}</small></p>
+    <p>Published {{book.publish_date}}, Updated {{book.updated|timesince}} ago</p>
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'books:book_update' book.slug %}">
+            <p>Update</p>
+        </a>
+        <a href="{% url 'books:book_delete' book.slug %}">
+            <p>Delete</p>
+        </a>
+    {% endif %}
+    {% include 'includes/footer.html' %}
+{% endblock content %}

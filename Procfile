@@ -1,0 +1,1 @@
+web: gunicorn bestbookstore.wsgi:application

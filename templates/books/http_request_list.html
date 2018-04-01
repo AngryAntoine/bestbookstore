@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head_title %}{{ head_title }} | {{ block.super}}{% endblock %}
+
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <div class="col-sm-12">
+        {% for request in request_list %}
+            <div class="list-group">
+                <p class="list-group-item-text">{{request.request_value }}</p>
+            </div>
+        {% empty %}
+            <p>No books here yet</p>
+        {% endfor %}
+    </div>
+    {% include 'includes/footer.html' %}
+{% endblock content %}
+

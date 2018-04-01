@@ -1,0 +1,16 @@
+{% load bootstrap %}
+<form method="post"  enctype="multipart/form-data" action="">
+    {% csrf_token %}
+    {% if form %}
+        {{ form|bootstrap }}
+    <br>
+    <button class="btn btn-success" type="submit" value="Send">Save</button>
+    <a href="javascript:history.back();">
+        <button type="button" class="btn btn-default">Back</button>
+    </a>
+    {% endif %}
+    {% if head_title == 'Delete Book' %}
+        <p>Are you sure you want to delete "{{ object }}"?</p>
+        <input class="btn btn-warning" type="submit" value="Confirm" />
+    {% endif %}
+</form>

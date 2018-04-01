@@ -1,0 +1,541 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$5xDrW43pfFnc$kN7d3bX8/kJYprPDv5L7HzgiIwF9TsgCU835cEPpROY=",
+        "last_login": "2018-03-31T22:15:28.555Z",
+        "is_superuser": true,
+        "username": "gramenko",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-03-31T22:15:05.554Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9awjt9vt9vqg3tpvwgtwahla4b3dhxj0",
+    "fields": {
+        "session_data": "NmQzY2Q4ODFiMDRmMjE5NzU4NDhkNzYzN2NjM2RkZWYxYjRlM2QzMTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjNDY1ZWQwYmM2OTljZjVjMmQ4MjA3MDE5OWNiZDUxYjlmOTI0YjRiIn0=",
+        "expire_date": "2018-04-14T22:15:28.756Z"
+    }
+},
+{
+    "model": "books.author",
+    "pk": 1,
+    "fields": {
+        "name": "Stephen King",
+        "slug": "stephen-king"
+    }
+},
+{
+    "model": "books.author",
+    "pk": 2,
+    "fields": {
+        "name": "Rudyard Kipling",
+        "slug": "rudyard-kipling"
+    }
+},
+{
+    "model": "books.author",
+    "pk": 3,
+    "fields": {
+        "name": "Niccol\u00f2 di Bernardo dei Machiavelli",
+        "slug": "niccolo-di-bernardo-dei-machiavelli"
+    }
+},
+{
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+        "title": "The Shining",
+        "slug": "the-shining",
+        "isbn": "9780399133145",
+        "image": "",
+        "price": "9.99",
+        "publish_date": "2018-03-31",
+        "created": "2018-03-31T22:36:07.461Z",
+        "updated": "2018-03-31T22:17:39.381Z",
+        "active": true,
+        "authors": [
+            1
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+        "title": "The Prince",
+        "slug": "the-prince",
+        "isbn": "9780307743657",
+        "image": "",
+        "price": "19.99",
+        "publish_date": "2018-03-31",
+        "created": "2018-03-31T22:18:04.238Z",
+        "updated": "2018-03-31T22:18:04.238Z",
+        "active": true,
+        "authors": [
+            3
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+        "title": "The Jungle Book",
+        "slug": "the-jungle-book",
+        "isbn": "9781110013258",
+        "image": "The Jungle Book/Anton.jpg",
+        "price": "5.99",
+        "publish_date": "2018-03-25",
+        "created": "2018-03-31T22:22:23.102Z",
+        "updated": "2018-03-31T22:18:23.653Z",
+        "active": true,
+        "authors": [
+            2
+        ]
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 1,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 2,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 3,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/request_list/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 4,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/create/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 5,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 6,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/create/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 7,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/request_list/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 8,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/create/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 9,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 10,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/request_list/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 11,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/create/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 12,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 13,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/create/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 14,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-prince/2/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 15,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/create/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 16,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 17,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 18,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 19,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 20,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 21,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 22,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 23,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 24,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 25,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 26,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 27,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 28,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 29,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 30,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 31,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 32,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 33,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 34,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-jungle-book/3/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 35,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 36,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 37,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 38,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 39,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 40,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 41,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 42,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 43,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 44,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 45,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 46,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 47,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 48,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 49,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/edit/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 50,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 51,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/1/"
+    }
+},
+{
+    "model": "books.requestlistener",
+    "pk": 52,
+    "fields": {
+        "request_value": "http://127.0.0.1:8000/the-shining/edit/"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-03-31T22:17:04.339Z",
+        "user": [
+            "gramenko"
+        ],
+        "content_type": [
+            "books",
+            "author"
+        ],
+        "object_id": "1",
+        "object_repr": "Stephen King",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-03-31T22:17:11.549Z",
+        "user": [
+            "gramenko"
+        ],
+        "content_type": [
+            "books",
+            "author"
+        ],
+        "object_id": "2",
+        "object_repr": "Rudyard Kipling",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-03-31T22:17:20.887Z",
+        "user": [
+            "gramenko"
+        ],
+        "content_type": [
+            "books",
+            "author"
+        ],
+        "object_id": "3",
+        "object_repr": "Niccol\u00f2 di Bernardo dei Machiavelli",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-03-31T22:22:23.135Z",
+        "user": [
+            "gramenko"
+        ],
+        "content_type": [
+            "books",
+            "book"
+        ],
+        "object_id": "3",
+        "object_repr": "The Jungle Book",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+}
+]

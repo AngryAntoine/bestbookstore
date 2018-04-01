@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head_title %}Home | {{ block.super}}{% endblock %}
+
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    {% if book_list %}
+    <span class="pull-right">
+        <p style="display: inline;">Order by publish date</p>
+        <a href="{% url 'books:book_list' %}">
+            <i class="fas fa-sort-numeric-down fa-2x"></i>
+        </a>
+        <a href="{% url 'books:book_list' %}{% if request.GET.order_by != 1 %}?order_by=1{% endif %}">
+            <i class="fas fa-sort-numeric-up fa-2x"></i>
+        </a>
+    </span>
+    {% endif %}
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Title</th>
+                <th>Author(s)</th>
+                <th>ISBN</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for book in book_list %}
+            <tr>
+                <td>{{ forloop.counter}}</td>
+                <td><span class="pull-left">
+                    <a href="{{ book.get_absolute_url }}">{{ book.title }}</a></span>
+                </td>
+                <td>{% for author in book.authors.all %}
+                        <span class="pull-left">{{ author.name }}{% if book.authors.all|length > 1 and not forloop.last %} and {% endif %}</span>
+                    {% endfor %}
+                </td>
+                <td><span class="pull-left">{{ book.isbn }}</span></td>
+                <td><span class="pull-left">{{ book.price }}</span></td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="5"><span class="center">No books here yet</span></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% include 'includes/footer.html' %}
+{% endblock content %}

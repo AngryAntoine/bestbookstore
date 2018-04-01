@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block head_title %}{{ head_title }} | {{ block.super }}{% endblock %}
+
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <div class="col-sm-9 col-sm-offset-2">
+        {% include 'forms/single_form.html' with form=form %}
+    </div>
+    {% include 'includes/footer.html' %}
+{% endblock %}
