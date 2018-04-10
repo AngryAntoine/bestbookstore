@@ -12,10 +12,10 @@
     <p>written by <small>{% for author in book.authors.all %}{{ author.name }}{% if book.authors.all|length > 1 and not forloop.last %} and {% endif %}{% endfor %}</small></p>
     <p>Published {{book.publish_date}}, Updated {{book.updated|timesince}} ago</p>
     {% if request.user.is_authenticated %}
-        <a href="{% url 'books:book_update' book.slug %}">
+        <a href="{% url 'books:book_update' book.slug book.id %}">
             <p>Update</p>
         </a>
-        <a href="{% url 'books:book_delete' book.slug %}">
+        <a href="{% url 'books:book_delete' book.slug book.id %}">
             <p>Delete</p>
         </a>
     {% endif %}
